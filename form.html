@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Form</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      background-color:pink;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      background-color:black; 
+      color:red;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2> Form</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" ><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" ><br><br>
+    <label for="about">About :</label>
+      <textarea id="about" name="about" rows="4"></textarea><br><br>
+
+    <label for="subject"> Subject:</label>
+    <select id="subject" name="subject" >
+      <option value="">--Choose a subject--</option>
+      <option value="maths">FEDF</option>
+      <option value="physics">OOPS</option>
+      <option value="chemistry">DBMS</option>
+      <option value="computer">AIML</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
