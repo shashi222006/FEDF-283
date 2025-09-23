@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SHASHI's GYM Membership Pricing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 12px;
+      text-align: center;
+      word-wrap: break-word;
+    }
+
+    @media screen and (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      td {
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SHASHI's GYM</h1>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Normal Plan</th>
+          <th>VIP Plan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Normal Plan">₹999 / month</td>
+          <td data-label="VIP Plan">₹2,499 / month</td>
+        </tr>
+        <tr>
+          <td data-label="Normal Plan">₹2,799 / 3 months</td>
+          <td data-label="VIP Plan">₹7,199 / 3 months</td>
+        </tr>
+        <tr>
+          <td data-label="Normal Plan">₹5,499 / 6 months</td>
+          <td data-label="VIP Plan">₹13,499 / 6 months</td>
+        </tr>
+        <tr>
+          <td data-label="Normal Plan">Note: no more flexibilities</td>
+          <td data-label="VIP Plan">Note: more flexibilities</td>
+        </tr>
+        <tr>
+          <td colspan="2">Contact: 8466058261</td>
+        </tr>
+        <tr>
+          <td colspan="2">Email: shashigym@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
